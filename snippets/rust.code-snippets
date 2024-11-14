@@ -1,0 +1,896 @@
+{
+  "snippet_1731606765134_mzukxi": {
+    "prefix": ".into_iter",
+    "body": [
+      ".into_iter()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_iktztc": {
+    "prefix": "fn main() { .. }",
+    "body": [
+      "fn main() ${1:-> Result<()> }{",
+      "    ${0:println!(\"Hello, world!\");}",
+      "    ${2:\n    Ok(())}",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_tjdbpw": {
+    "prefix": "/OPTIMIZE",
+    "body": [
+      "// OPTIMIZE: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_dtmlix": {
+    "prefix": "/DEBUG",
+    "body": [
+      "// DEBUG: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_fqzywx": {
+    "prefix": ".to_owned",
+    "body": [
+      ".to_owned()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_eefknq": {
+    "prefix": "str!",
+    "body": [
+      "str!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_lfhzyq": {
+    "prefix": "pub(super) ",
+    "body": [
+      "pub(super) $1"
+    ]
+  },
+  "snippet_1731606765134_wzcvlx": {
+    "prefix": "mod _;",
+    "body": [
+      "mod $1;"
+    ]
+  },
+  "snippet_1731606765134_wxgnvc": {
+    "prefix": "let _ = ..;",
+    "body": [
+      "let $1 = $0;"
+    ]
+  },
+  "snippet_1731606765134_ruivla": {
+    "prefix": "async fn main() { .. }",
+    "body": [
+      "#[${1|tokio::main,async_std::main,actix_web::main,axum::main|}]",
+      "async fn main() ${1:-> Result<()> }{",
+      "    ${0:println!(\"Hello, world!\");}",
+      "    ${2:\n    Ok(())}",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_brxemw": {
+    "prefix": "impl _ for _ { .. }",
+    "body": [
+      "impl $1 for $2 {",
+      "    $0",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_ibehxe": {
+    "prefix": "impl Display for _ { .. }",
+    "body": [
+      "impl std::fmt::Display for $1 {",
+      "    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {",
+      "        write!(f, \"$0\")",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765135_bbncam": {
+    "prefix": "impl Parser for _ { .. }",
+    "body": [
+      "impl syn::parse::Parse for $1 {",
+      "    fn parse(input: syn::parse::ParseStream) -> syn::Result<Self> {",
+      "        $0",
+      "",
+      "        Ok(Self {})",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_koueuv": {
+    "prefix": ".unwrap",
+    "body": [
+      ".unwrap()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_hshbwx": {
+    "prefix": "impl AsRef<_> for _ { .. }",
+    "body": [
+      "impl std::convert::AsRef<$1> for $2 {",
+      "    fn as_ref(&self) -> &$1 {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_znrhcc": {
+    "prefix": "deq!",
+    "body": [
+      "deq!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_iwfdwn": {
+    "prefix": "match Result<_, _> { .. }",
+    "body": [
+      "match $1 {",
+      "    Ok(v) => $2,",
+      "    Err(e) => $3",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_ewmadv": {
+    "prefix": "let mut _ = ..;",
+    "body": [
+      "let mut $1 = $0;"
+    ]
+  },
+  "snippet_1731606765134_lbpygh": {
+    "prefix": "const _: _ = ..;",
+    "body": [
+      "const $1: $2 = $0;"
+    ]
+  },
+  "snippet_1731606765134_ifknce": {
+    "prefix": "set!",
+    "body": [
+      "set![\"${1:args}\"]"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_dyjpcr": {
+    "prefix": "/NOTE",
+    "body": [
+      "// NOTE: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_iutvah": {
+    "prefix": "while let _ = _ { .. }",
+    "body": [
+      "while let ${1|Some(v),Ok(v),Err(e)|} = $2 {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_pdvprc": {
+    "prefix": "/FIXME",
+    "body": [
+      "// FIXME: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_ueujun": {
+    "prefix": ".collect",
+    "body": [
+      ".collect()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_dewbug": {
+    "prefix": "for _ in _ { .. }",
+    "body": [
+      "for $1 in $2 {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_juelbl": {
+    "prefix": "panic!",
+    "body": [
+      "panic!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_rtnknd": {
+    "prefix": "if? _ { .. }else{ .. }",
+    "body": [
+      "if $1 { $2 }else{ $3 }"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_fhfslv": {
+    "prefix": "pub fn builder() -> _Builder { .. }",
+    "body": [
+      "/// Creates a new builder for $1",
+      "pub fn builder() -> $1Builder {",
+      "    $1Builder::default()",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_qxehht": {
+    "prefix": "pub ",
+    "body": [
+      "pub $1"
+    ]
+  },
+  "snippet_1731606765134_fsyvbx": {
+    "prefix": "println!",
+    "body": [
+      "println!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_okkvmb": {
+    "prefix": "use _::_;",
+    "body": [
+      "use $1::$0;"
+    ]
+  },
+  "snippet_1731606765134_ejjfaw": {
+    "prefix": "/BUG",
+    "body": [
+      "// BUG: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_rnvbwb": {
+    "prefix": "mod _;  use _::{ .. }",
+    "body": [
+      "mod $1;  use $1::{ $0 };"
+    ]
+  },
+  "snippet_1731606765134_rcsvyh": {
+    "prefix": "pub(in crate::_) ",
+    "body": [
+      "pub(in crate::$1) $0"
+    ]
+  },
+  "snippet_1731606765134_nokxes": {
+    "prefix": "unsafe { .. }",
+    "body": [
+      "unsafe {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_arivvb": {
+    "prefix": "/TODO",
+    "body": [
+      "// TODO: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_mbsbml": {
+    "prefix": ".to_string",
+    "body": [
+      ".to_string()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_iyybho": {
+    "prefix": "fn test_() { .. }",
+    "body": [
+      "#[test]",
+      "fn test_$1() ${2:-> Result<()> }{",
+      "    ${0:// TODO: ...}",
+      "",
+      "    ${3:Ok(())}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_usfass": {
+    "prefix": "impl _ { .. }",
+    "body": [
+      "impl $1 {",
+      "    $0",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_uwltyt": {
+    "prefix": "pub fn build() -> _ { .. }",
+    "body": [
+      "/// Builds the $1 instance",
+      "pub fn build(self) -> Result<$1> {",
+      "    Ok($1 {",
+      "        ${0}",
+      "    })",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_jeqrox": {
+    "prefix": "dbg!",
+    "body": [
+      "dbg!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_cdiesg": {
+    "prefix": "if _ { .. } else { .. }",
+    "body": [
+      "if $1 {",
+      "    ${2:// TODO: ...}",
+      "} else {",
+      "    ${3:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_zyrarb": {
+    "prefix": "vec!",
+    "body": [
+      "vec!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_sbwsvw": {
+    "prefix": "async { .. }",
+    "body": [
+      "async {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_bqsbfa": {
+    "prefix": "impl Default for _ { .. }",
+    "body": [
+      "impl Default for $1 {",
+      "    fn default() -> Self {",
+      "        Self {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_nnuqsp": {
+    "prefix": "format!",
+    "body": [
+      "format!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_oimtvo": {
+    "prefix": "assert_eq!",
+    "body": [
+      "assert_eq!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_ymarqb": {
+    "prefix": "impl From<_> for _ { .. }",
+    "body": [
+      "impl From<$1> for $2 {",
+      "    fn from(v: $1) -> Self {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_jftzse": {
+    "prefix": "impl Into<_> for _ { .. }",
+    "body": [
+      "impl Into<$1> for $2 {",
+      "    fn into(self) -> $1 {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_wjygnq": {
+    "prefix": "enum { .. } impl { .. }",
+    "body": [
+      "/// ...",
+      "enum $1 {",
+      "    $2",
+      "}",
+      "",
+      "impl $1 {",
+      "    $3",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_mfxkjp": {
+    "prefix": "impl Error for _ { .. }",
+    "body": [
+      "impl std::error::Error for $1 {}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_ppkbuk": {
+    "prefix": "impl Clone for _ { .. }",
+    "body": [
+      "impl Clone for $1 {",
+      "    fn clone(&self) -> Self {",
+      "        Self {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_umkhmz": {
+    "prefix": "loop { .. }",
+    "body": [
+      "loop {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_xvdjef": {
+    "prefix": "type _ = ..;",
+    "body": [
+      "type $1 = $0;"
+    ]
+  },
+  "snippet_1731606765134_vqckik": {
+    "prefix": "impl Deref for _ { .. }",
+    "body": [
+      "impl std::ops::Deref for $1 {",
+      "    type Target = $2;",
+      "",
+      "    fn deref(&self) -> &Self::Target {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_pewzbz": {
+    "prefix": "match Option<_> { .. }",
+    "body": [
+      "match $1 {",
+      "    Some(v) => $2,",
+      "    None => $3",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_srucwr": {
+    "prefix": "/[i]",
+    "body": [
+      "// [ ]: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_cnegfj": {
+    "prefix": "while _ { .. }",
+    "body": [
+      "while $1 {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_gitfwt": {
+    "prefix": "trait _ { .. }",
+    "body": [
+      "/// ...",
+      "trait $1 {",
+      "    $0",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_tmkswd": {
+    "prefix": "mod tests { .. }",
+    "body": [
+      "#[cfg(test)]",
+      "mod tests {",
+      "    use super::*;",
+      "",
+      "    #[test]",
+      "    fn $1() {",
+      "        ${0:// TODO: ...}",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765135_otlymz": {
+    "prefix": "impl Stream for _ { .. }",
+    "body": [
+      "impl Stream for $1 {",
+      "    type Item = $2;",
+      "",
+      "    fn poll_next(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Option<Self::Item>> {",
+      "        $0",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765135_kiueok": {
+    "prefix": "@proc_macro_derive",
+    "body": [
+      "//! ..",
+      "",
+      "use proc_macro::TokenStream;",
+      "use proc_macro2::TokenStream as TokenStream2;",
+      "use quote::quote;",
+      "",
+      "/// ..",
+      "#[proc_derive_macro(${1}, attribute = \"${2}\")]",
+      "pub fn ${2}(input: TokenStream) -> TokenStream {",
+      "    let ParsedTokens {} = syn::parse_macro_input!(input as ParsedTokens);",
+      "    ",
+      "    quote! {",
+      "        // TODO: ...",
+      "    }",
+      "}",
+      "",
+      "/// ..",
+      "struct ParsedInput {",
+      "    // TODO: ...",
+      "}",
+      "",
+      "impl syn::parse::Parse for ParsedTokens {",
+      "    fn parse(input: syn::parse::ParseStream) -> syn::Result<Self> {",
+      "        // TODO: ...",
+      "",
+      "        Ok(Self {})",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765135_usfety": {
+    "prefix": "@proc_macro_attribute",
+    "body": [
+      "//! ..",
+      "",
+      "use proc_macro::TokenStream;",
+      "use proc_macro2::TokenStream as TokenStream2;",
+      "use quote::quote;",
+      "",
+      "/// ..",
+      "#[proc_macro_attribute]",
+      "pub fn ${1}(attr: TokenStream, item: TokenStream) -> TokenStream {",
+      "    let ParsedTokens {} = syn::parse_macro_input!(input as ParsedTokens);",
+      "    ",
+      "    quote! {",
+      "        // TODO: ...",
+      "    }",
+      "}",
+      "",
+      "/// ..",
+      "struct ParsedInput {",
+      "    // TODO: ...",
+      "}",
+      "",
+      "impl syn::parse::Parse for ParsedTokens {",
+      "    fn parse(input: syn::parse::ParseStream) -> syn::Result<Self> {",
+      "        // TODO: ...",
+      "",
+      "        Ok(Self {})",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_rppylv": {
+    "prefix": ".expect",
+    "body": [
+      ".expect()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_tkolzg": {
+    "prefix": "assert!",
+    "body": [
+      "assert!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_sqacur": {
+    "prefix": "mod _ { .. }",
+    "body": [
+      "mod $1 {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ]
+  },
+  "snippet_1731606765135_toehpr": {
+    "prefix": "impl<'de> Deserialize<'de> for _ { .. }",
+    "body": [
+      "impl<'de> serde::Deserialize<'de> for $1 {",
+      "    fn deserialize<D>(deserializer: D) -> std::result::Result<Self, D::Error>",
+      "    where",
+      "        D: serde::Deserializer<'de>,",
+      "    {",
+      "        use serde::de::Error;",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_cofhqn": {
+    "prefix": "re!",
+    "body": [
+      "re!(\"${1:args}\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_degrhf": {
+    "prefix": "#cfg",
+    "body": [
+      "#[cfg(${1:test|debug_assertions|feature|target_os})]"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_vuirex": {
+    "prefix": "static _: _ = ..;",
+    "body": [
+      "static $1: $2 = $0;"
+    ]
+  },
+  "snippet_1731606765134_qttguh": {
+    "prefix": "struct _ { .. }",
+    "body": [
+      "/// ...",
+      "struct $1 {",
+      "    $0",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765135_wvjfhs": {
+    "prefix": "@proc_macro",
+    "body": [
+      "//! ..",
+      "",
+      "use proc_macro::TokenStream;",
+      "use proc_macro2::TokenStream as TokenStream2;",
+      "use quote::quote;",
+      "",
+      "/// ..",
+      "#[proc_macro]",
+      "pub fn ${1}(input: TokenStream) -> TokenStream {",
+      "    let ParsedTokens {} = syn::parse_macro_input!(input as ParsedTokens);",
+      "    ",
+      "    quote! {",
+      "        // TODO: ...",
+      "    }",
+      "}",
+      "",
+      "/// ..",
+      "struct ParsedInput {",
+      "    // TODO: ...",
+      "}",
+      "",
+      "impl syn::parse::Parse for ParsedTokens {",
+      "    fn parse(input: syn::parse::ParseStream) -> syn::Result<Self> {",
+      "        // TODO: ...",
+      "",
+      "        Ok(Self {})",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765135_mckgqk": {
+    "prefix": "impl Future for _ { .. }",
+    "body": [
+      "impl Future for $1 {",
+      "    type Output = $2;",
+      "",
+      "    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {",
+      "        $0",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_vgfbue": {
+    "prefix": "if _ { .. }",
+    "body": [
+      "if $1 {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_nllccy": {
+    "prefix": ".clone",
+    "body": [
+      ".clone()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_fidmth": {
+    "prefix": ".iter",
+    "body": [
+      ".iter()"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_gtcgfn": {
+    "prefix": "map!",
+    "body": [
+      "map! {\"${1:args}\"}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_sydtxo": {
+    "prefix": "enum { .. }",
+    "body": [
+      "/// ...",
+      "enum $1 {",
+      "    $0",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_gafiqs": {
+    "prefix": "#derive",
+    "body": [
+      "#[derive(${1:Debug|Display|Clone|Copy|Eq|PartialEq|Ord|PartialOrd|Hash|Serialize|Deserialize|Default|Send|Sync})]"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_qmmvle": {
+    "prefix": "async fn _() { .. }",
+    "body": [
+      "async fn $1($2)  ${3:-> }{",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_pzumta": {
+    "prefix": "match _ { .. }",
+    "body": [
+      "match $1 {",
+      "    $2 => $3,",
+      "    _ => ${4:panic!()}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_vsiqmm": {
+    "prefix": "struct _ { .. } impl { .. }",
+    "body": [
+      "/// ...",
+      "struct $1 {",
+      "    $2",
+      "}",
+      "",
+      "impl $1 {",
+      "    $3",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_ktugde": {
+    "prefix": "/[x]",
+    "body": [
+      "// [x]: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_zkqvtj": {
+    "prefix": "hello_world",
+    "body": [
+      "println!(\"Hello, world!\")"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_fivaum": {
+    "prefix": "impl Debug for _ { .. }",
+    "body": [
+      "impl std::fmt::Debug for $1 {",
+      "    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {",
+      "        f.debug_struct(\"$1\")",
+      "            $0",
+      "            .finish()",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_ogajhc": {
+    "prefix": "list!",
+    "body": [
+      "list![\"${1:args}\"]"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_hbnqfc": {
+    "prefix": "mod _;  use _::..;",
+    "body": [
+      "mod $1;  use $1::$0;"
+    ]
+  },
+  "snippet_1731606765134_mvdlmy": {
+    "prefix": "fn _() { .. }",
+    "body": [
+      "fn $1($2) ${3:-> }{",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_durlol": {
+    "prefix": "pub fn new() -> Self { .. }",
+    "body": [
+      "/// Creates a new instance of $1",
+      "pub fn new($2) -> Self {",
+      "    Self {",
+      "        ${0}",
+      "    }",
+      "}"
+    ]
+  },
+  "snippet_1731606765134_hjkkwu": {
+    "prefix": "pub(crate) ",
+    "body": [
+      "pub(crate) $1"
+    ]
+  },
+  "snippet_1731606765134_rfzjvf": {
+    "prefix": "use _::{ .. }",
+    "body": [
+      "use $1::{ $0 };"
+    ]
+  },
+  "snippet_1731606765134_otbgkx": {
+    "prefix": "if let _ = _ { .. }",
+    "body": [
+      "if let ${1|Some(v),Ok(v),Err(e)|} = $2 {",
+      "    ${0:// TODO: ...}",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_kzvdqq": {
+    "prefix": "/HACK",
+    "body": [
+      "// HACK: ${1:...}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_npupgk": {
+    "prefix": "#allow",
+    "body": [
+      "#[allow(${1:dead_code|unused_variables|unused_imports})]"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765135_xaafyh": {
+    "prefix": "impl Serialize for _ { .. }",
+    "body": [
+      "impl serde::Serialize for $1 {",
+      "    fn serialize<S>(&self, serializer: S) -> std::result::Result<S::Ok, S::Error>",
+      "    where",
+      "        S: serde::Serializer,",
+      "    {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "scope": "rust"
+  },
+  "snippet_1731606765134_weodfc": {
+    "prefix": "/REVIEW",
+    "body": [
+      "// REVIEW: ${1:...}"
+    ],
+    "scope": "rust"
+  }
+}
