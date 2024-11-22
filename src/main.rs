@@ -687,6 +687,67 @@ fn main() {
 
     // create a cnippets file:
     snippets.write_to("./snippets/rust.code-snippets").unwrap();
-    snippets.write_to("C:/Users/Admin/AppData/Roaming/Code/User/snippets/rust.code-snippets").unwrap();  // NOTE: Path to the vscode custom user snippets folder!!
+    snippets.write_to("C:/Users/1/AppData/Roaming/Code/User/snippets/rust.code-snippets").unwrap();  // NOTE: Path to the vscode custom user snippets folder!!
 }
 
+
+
+/*      BONUS:                  */
+
+// TODO: ...
+// NOTE: ...
+// BUG: ...
+// FIXME: ...
+// HACK: ...
+// DEBUG: ...
+
+/* Todo-Tree options:
+"settings.json": {
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "NOTE",
+        "DEBUG"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "light-bulb",  // Иконка лампочки для обозначения идеи или задачи
+            "foreground": "#00FF00",  // Яркий зеленый цвет
+            "background": "#00000080",  // Полупрозрачный черный фон
+            "opacity": 50
+        },
+        "NOTE": {
+            "icon": "note",  // Иконка заметки для обозначения дополнительных комментариев
+            "foreground": "#FF00FF",  // Яркий фиолетовый цвет
+            "background": "#00000080",  // Полупрозрачный черный фон
+            "opacity": 50
+        },
+        "BUG": {
+            "icon": "bug",  // Иконка ошибки для обозначения багов
+            "foreground": "#FFFF00",  // Яркий желтый цвет
+            "background": "#00000080",  // Полупрозрачный черный фон
+            "opacity": 50
+        },
+        "FIXME": {
+            "icon": "flame",  // Иконка пламени для обозначения критических проблем
+            "foreground": "#FF4500",  // Яркий оранжевый цвет
+            "background": "#00000080",  // Полупрозрачный черный фон
+            "opacity": 50
+        },
+        "HACK": {
+            "icon": "tools",  // Иконка инструментов для обозначения хаков или нестандартных решений
+            "foreground": "#00CED1",  // Яркий бирюзовый цвет
+            "background": "#00000080",  // Полупрозрачный черный фон
+            "opacity": 50
+        },
+        "DEBUG": {
+            "icon": "debug-alt",  // Иконка отладки для обозначения отладочных сообщений
+            "foreground": "#FF1493",  // Яркий розовый цвет
+            "background": "#00000080",  // Полупрозрачный черный фон
+            "opacity": 50
+        }
+    }
+}
+*/
