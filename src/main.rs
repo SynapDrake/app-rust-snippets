@@ -1,5 +1,8 @@
 use vscode_generator::{ SnippetsFile, Snippet };
 
+const PATH_TO_SNIPPETS: &str = "C:/Users/1/AppData/Roaming/Code/User/snippets/rust.code-snippets";  // NOTE: Path to the VS Code custom user snippets folder!!
+// const PATH_TO_SNIPPETS: &str = "./snippets/rust.code-snippets";
+
 fn main() {
     // generating snippets:
     let snippets = SnippetsFile::new(vec![
@@ -685,9 +688,8 @@ fn main() {
             ]),
     ]);
 
-    // create a cnippets file:
-    snippets.write_to("./snippets/rust.code-snippets").unwrap();
-    snippets.write_to("C:/Users/1/AppData/Roaming/Code/User/snippets/rust.code-snippets").unwrap();  // NOTE: Path to the vscode custom user snippets folder!!
+    // creating a snippets file:
+    snippets.write_to(PATH_TO_SNIPPETS).unwrap();
 }
 
 
